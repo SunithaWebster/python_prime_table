@@ -3,7 +3,7 @@ from unittest import TestCase, main
 from user_prime_input import user_input
 
 
-class TestUserInput(TestCase):
+class TestUserPrimeInput(TestCase):
 
     # This test should fail
     def test_user_input(self):
