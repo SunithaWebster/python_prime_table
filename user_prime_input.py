@@ -11,6 +11,3 @@ def user_input():
             print("Thank you for your valid input.")
             break
     return number
-
-
-user_input()

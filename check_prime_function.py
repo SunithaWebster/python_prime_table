@@ -19,7 +19,3 @@ def check_prime():
             return False
         i = i + 6
     return True
-
-
-check = check_prime()
-print(check)
