@@ -1,6 +1,6 @@
 #  A program to test user input
 from unittest import TestCase, main
-from python_prime_table import user_input
+from user_prime_input import user_input
 
 
 class TestUserInput(TestCase):
