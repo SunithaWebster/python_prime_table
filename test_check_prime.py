@@ -1,6 +1,6 @@
 #  A program to test if the prime checking function, check_prime, works
 from unittest import TestCase, main
-from check_prime import check_prime
+from check_prime_function import check_prime
 
 
 class TestCheckPrime(TestCase):
