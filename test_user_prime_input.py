@@ -5,11 +5,10 @@ from user_prime_input import user_input
 
 class TestUserPrimeInput(TestCase):
 
-    # This test should fail
     def test_user_input(self):
         expected = user_input()
         result = user_input()
-        self.assertEquals(expected, result)
+        self.assertEqual(expected, result)
 
 
 if __name__ == 'main':

@@ -5,11 +5,10 @@ from check_prime_function import check_prime
 
 class TestCheckPrime(TestCase):
 
-    # This test should fail
     def test_check_prime(self):
         expected = check_prime()
         result = check_prime()
-        self.assertEquals(expected, result)
+        self.assertEqual(expected, result)
 
 
 if __name__ == 'main':
