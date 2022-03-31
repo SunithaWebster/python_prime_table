@@ -7,8 +7,8 @@ class TestUserPrimeInput(TestCase):
 
     # This test should fail
     def test_user_input(self):
-        expected = 5
-        result = user_input("h")
+        expected = user_input()
+        result = user_input()
         self.assertEquals(expected, result)
 
 

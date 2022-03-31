@@ -7,8 +7,8 @@ class TestCheckPrime(TestCase):
 
     # This test should fail
     def test_check_prime(self):
-        expected = "0"
-        result = check_prime('True')
+        expected = check_prime()
+        result = check_prime()
         self.assertEquals(expected, result)
 
 
