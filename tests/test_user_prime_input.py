@@ -1,6 +1,6 @@
 #  A program to test user input
 from unittest import TestCase, main
-from make_primes_list import user_input
+from prime_table_app import user_input
 
 
 class TestUserPrimeInput(TestCase):

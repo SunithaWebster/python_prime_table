@@ -1,6 +1,6 @@
 #  A program to test if the make_primes_list function, retrieve_primes_to_n, works
 from unittest import TestCase, main
-from make_primes_list import retrieve_primes_to_n
+from prime_table_app import retrieve_primes_to_n
 
 
 class TestMakePrimesList(TestCase):

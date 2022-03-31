@@ -1,6 +1,6 @@
 #  A program to test if the make_primes_list function, primes_boolean_list, works
 from unittest import TestCase, main
-from make_primes_list import primes_boolean_list
+from prime_table_app import primes_boolean_list
 
 
 class TestMakePrimesList(TestCase):
