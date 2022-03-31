@@ -1,4 +1,16 @@
-from user_prime_input import user_input
+def user_input():
+    while True:
+        number = int(input("\nPlease enter your chosen positive integer, in digits: "))
+        try:
+            if number <= 0:
+                raise ValueError
+        except ValueError:
+            print("\nZero or less are not valid inputs - please try again with a positive integer.")
+            continue
+        else:
+            print("\nThank you for your valid input.")
+            break
+    return number
 
 
 def primes_boolean_list():
@@ -39,5 +51,8 @@ def display_multiplication_table():
             print(" " + str(i * j), end='|')
             multi_table_products.append(i * j)
         print()
-    print(multi_table_products)
     return multi_table_products
+
+
+if __name__ == '__main__':
+    display_multiplication_table()
