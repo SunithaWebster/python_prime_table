@@ -1,13 +1,13 @@
 def user_input():
     while True:
+        number = int(input("\nPlease enter your chosen positive integer, in digits: "))
         try:
-            number = int(input("Please enter your chosen positive integer: "))
-            if number < 0:
-                raise ValueError("You have not entered a positive number - please try again.")
+            if number <= 0:
+                raise ValueError
         except ValueError:
-            print("You have not entered an integer - please try again with a positive integer.")
+            print("\nZero or less are not valid inputs - please try again with a positive integer.")
             continue
         else:
-            print("Thank you for your valid input.")
+            print("\nThank you for your valid input.")
             break
     return number
