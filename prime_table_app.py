@@ -1,4 +1,14 @@
-def user_input():
+# Program to output a prime multiplication table to the terminal
+
+def user_input() -> int:
+    """Validate user integer input.
+
+    Returns:
+      int
+
+    Raises:
+      ValueError: If is not a positive integer of 1 or above.
+    """
     while True:
         number = int(input("\nPlease enter your chosen positive integer, in digits: "))
         try:
@@ -13,7 +23,13 @@ def user_input():
     return number
 
 
-def primes_boolean_list():
+def primes_boolean_list() -> list[bool]:
+    """Create sifted, master Boolean list of sequential primes up to large, maximum number - to act as selection
+    source list.
+
+    Returns:
+      list[bool]
+    """
     max_number = 1000077
     prime = [True for i in range(max_number)]
     start = 2
@@ -27,7 +43,13 @@ def primes_boolean_list():
     return prime
 
 
-def retrieve_primes_to_n():
+def retrieve_primes_to_n() -> list:
+    """Subset prime boolean source list from above, to return the first N (from user input in outer scope) primes,
+     via list slicing.
+
+    Returns:
+      list
+    """
     max_number = 1000077
     primes = []
     N = user_input()
@@ -40,7 +62,13 @@ def retrieve_primes_to_n():
     return primes_list
 
 
-def display_multiplication_table():
+def display_multiplication_table() -> list:
+    """Output multiplication table of first N primes list - from above - to terminal and return list of products
+    for testing.
+
+    Returns:
+      list
+    """
     primes = retrieve_primes_to_n()
     multi_table_products = []
     print("\nHere is the multiplication table:\n")
