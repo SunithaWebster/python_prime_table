@@ -26,3 +26,18 @@ def retrieve_primes_to_n():
     primes_list = primes[:N]
     print(f"\nHere is a list of the first {N} prime(s): {primes_list}")
     return primes_list
+
+
+def display_multiplication_table():
+    primes = retrieve_primes_to_n()
+    multi_table_products = []
+    print("\nHere is the multiplication table:\n")
+    print("|  | " + '| '.join(str(prime) for prime in primes), end='|\n')
+    for i in primes:
+        print("| " + str(i), end='|')
+        for j in primes:
+            print(" " + str(i * j), end='|')
+            multi_table_products.append(i * j)
+        print()
+    print(multi_table_products)
+    return multi_table_products
