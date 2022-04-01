@@ -7,7 +7,7 @@ def user_input() -> int:
       int
 
     Raises:
-      ValueError: If is not a positive integer of 1 or above.
+      ValueError: If not a positive integer of 1 or above.
     """
     while True:
         number = int(input("\nPlease enter your chosen positive integer, in digits: "))
@@ -44,8 +44,8 @@ def primes_boolean_list() -> list[bool]:
 
 
 def retrieve_primes_to_n() -> list:
-    """Subset prime boolean source list from above, to return the first N (from user input in outer scope) primes,
-     via list slicing.
+    """Subset prime boolean source list from above, to return primes up to N (from outer scope user input), via list
+    slicing.
 
     Returns:
       list
